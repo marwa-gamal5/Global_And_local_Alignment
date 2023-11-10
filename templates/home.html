@@ -1,0 +1,91 @@
+{% load static %}
+<!--<!DOCTYPE html>-->
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Alignment</title>
+
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="{% static 'https://use.fontawesome.com/releases/v5.6.3/css/all.css' %}">
+
+
+  <!-- Bootstrap core CSS -->
+
+<link rel="stylesheet" href="{% static 'https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.2.1/css/bootstrap.min.css' %}">
+  <link rel="stylesheet" href="{% static 'bootstrap.min.css' %}">
+
+  <!-- Material Design Bootstrap -->
+  <link rel="stylesheet" href="{% static 'https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.7.0/css/mdb.min.css' %}">
+
+  <!-- Your custom styles -->
+  <link rel="stylesheet" href="{% static 'home.css' %}">
+
+</head>
+
+<body>
+  <div class="section1">
+    <div class="row justify-content-center">
+      <div class="col-sm">
+
+        <img class="logo" src=" {% static 'logo.png' %}">
+      </div>
+      <div class="col-sm">
+        <a href="input_local" style="text-decoration: none;">
+        <h1>Local Alignment</h1></a>
+      </div>
+      <div class="col-sm">
+        <a href="input" style="text-decoration: none;">
+        <h1>Global Alignment</h1>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="row ">
+    <div class="horzantil-line"></div>
+  </div>
+  <br>
+  <br>
+  <div class="section2  ">
+
+    <div class="row">
+      <div class="col-6">
+        <h1>Glopal Alignment</h1>
+        <p>Closely related sequences which are of same length are very much appropriate for global alignment. Here, the
+          alignment is carried out from beginning till end of the sequence to find out the best possible alignment using
+          The Needleman-Wunsch algorithm.</p>
+      </div>
+      <div class="col-6 p-5">
+        <a href="input">
+          <div class="btn text-center  btn-lg">
+            Go To Global Alignment
+            <i class="fas fa-arrow-right"></i>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-6">
+        <h1>local Alignment</h1>
+        <p>Sequences which are suspected to have similarity or even dissimilar sequences can be compared with local
+          alignment method. It finds local regions with high level of similarity. using The Smith-Waterman algorithm.
+        </p>
+      </div>
+      <div class="col-6 p-5">
+        <a href="input_local">
+          <div class="btn text-center  btn-lg">
+            Go To Local Alignment
+            <i class="fas fa-arrow-right"></i>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+
+
+
+
+</body>

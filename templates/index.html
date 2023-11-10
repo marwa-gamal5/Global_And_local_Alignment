@@ -1,0 +1,299 @@
+<!--{% load static%}-->
+<!--&lt;!&ndash;<!DOCTYPE html>&ndash;&gt;-->
+<!--<html lang="en">-->
+
+<!--<head>-->
+<!--    <meta charset="UTF-8">-->
+<!--    <meta http-equiv="X-UA-Compatible" content="IE=edge">-->
+<!--    <meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+<!--    <title>Global Alignment</title>-->
+<!--    <link rel="stylesheet" href="{% static 'style.css' %}">-->
+<!--    <link rel="stylesheet" href="{% static 'bootstrap.min.css' %}">-->
+<!--    <link rel="stylesheet" href="{% static 'style.css' %}">-->
+<!--    <link rel="stylesheet" href="{% static 'fontawesome-free-6.1.1-web/css/fontawesome.min.css' %}">-->
+<!--    <link rel="stylesheet" href="{% static 'https://use.fontawesome.com/releases/v5.8.1/css/all.css' %}"-->
+<!--        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">-->
+<!--    <link rel="stylesheet" href="{% static 'https://fonts.googleapis.com/css?family=Montserrat:400,600,700|Nunito:400,700 '%}" >-->
+<!--</head>-->
+
+<!--<body>-->
+<!--    <div class="container all ">-->
+<!--        <div class="container py-5 ">-->
+<!--            <div class="row">-->
+<!--                <div class="col-lg-3">-->
+<!--&lt;!&ndash;                      <img class="logo" src=" {% static 'logo.png' %}">&ndash;&gt;-->
+<!--&lt;!&ndash;                    <img src="WhatsApp_Image_2022-12-12_at_6.35.20_AM-removebg-preview-removebg-preview.png"&ndash;&gt;-->
+<!--&lt;!&ndash;                        class="img-fluid">&ndash;&gt;-->
+<!--                          <img src="{%static 'logo.png'%}"-->
+<!--                        class="img-fluid">-->
+<!--                </div>-->
+<!--                <div class="col-lg-1">-->
+<!--                    <div class="vl_img"></div>-->
+<!--                </div>-->
+<!--                <div class="col-lg-8">-->
+<!--                    <br>-->
+<!--                    <br>-->
+<!--                    <p>global Alignment Website</p>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--            <br>-->
+<!--            <div class="row">-->
+<!--                <div class="col-lg-4 ">-->
+
+<!--                    <p>The Resulting Alignment</p>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--            <br>-->
+
+<!--            <div class="row">-->
+<!--                <div class="col-lg-5 px-4">-->
+<!--                    <p>Sequencing Alignment: </p>-->
+<!--&lt;!&ndash;                    <P>G T C G A C G C A</P>&ndash;&gt;-->
+<!--&lt;!&ndash;                    &lt;!&ndash; <div class="vl_seq"></div> &ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;                    <p> G A T T A C - - A</p>&ndash;&gt;-->
+<!--                </div>-->
+<!--                <div class="col-lg-1 ">-->
+<!--                    <div class="vl"></div>-->
+<!--                </div>-->
+
+<!--                <div class="col-lg-6 ">-->
+<!--                    <br>-->
+<!--                    <br>-->
+<!--                    <p>Alignment Score: </p>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--        <div class="container py-5  justify-content-center">-->
+<!--            <div class="matrix">-->
+<!--                <p class="align">Alignment Matrix:</p>-->
+<!--                <a href="input" >-->
+<!--                <div class="btn text-center  btn-lg" >-->
+<!--                    Try Another Sequence-->
+<!--                    <i class="fas fa-arrow-right"></i>-->
+<!--                </div>-->
+<!--                </a>-->
+<!--            </div>-->
+<!--            &lt;!&ndash; <div class="row matrix">-->
+
+<!--                <div class="col-lg-6 ">-->
+
+<!--                    <p>Alignment Matrix:</p>-->
+
+<!--                </div>-->
+
+<!--                <div class="col-lg-6 ">-->
+
+<!--                    <div class="btn text-center justify-content-center btn-lg" href="">-->
+<!--                        Try Another Sequence-->
+<!--                        <i class="fas fa-arrow-right"></i>-->
+<!--                    </div>-->
+
+<!--                </div>-->
+
+<!--            </div> &ndash;&gt;-->
+<!--            &lt;!&ndash; <div class="row">-->
+<!--                <div class="col-lg-7 matrix my-4">-->
+<!--                    <div class="vl_matrix1"></div>-->
+<!--                </div>-->
+<!--                <div class="vl_matrix2"></div>-->
+<!--                <div class="vl_matrix3"></div>-->
+<!--                <div class="vl_matrix4"></div>-->
+<!--            </div> &ndash;&gt;-->
+<!--            <div class="row">-->
+<!--                <div class="col-lg-7 ">-->
+<!--&lt;!&ndash;                    <div class="table my-4">&ndash;&gt;-->
+<!--&lt;!&ndash;                        <table class="table">&ndash;&gt;-->
+<!--&lt;!&ndash;                            <tbody id="tableBody">&ndash;&gt;-->
+<!--&lt;!&ndash;                                <tr>&ndash;&gt;-->
+<!--&lt;!&ndash;                                    <td>A</td>&ndash;&gt;-->
+<!--&lt;!&ndash;                                    <td>A</td>&ndash;&gt;-->
+<!--&lt;!&ndash;                                    <td>A</td>&ndash;&gt;-->
+<!--&lt;!&ndash;                                    <td>A</td>&ndash;&gt;-->
+<!--&lt;!&ndash;                                    <td>A</td>&ndash;&gt;-->
+<!--&lt;!&ndash;                                    <td>A</td>&ndash;&gt;-->
+<!--&lt;!&ndash;                                </tr>&ndash;&gt;-->
+<!--&lt;!&ndash;                                <tr>&ndash;&gt;-->
+<!--&lt;!&ndash;                                    <td>A</td>&ndash;&gt;-->
+<!--&lt;!&ndash;                                    <td>A</td>&ndash;&gt;-->
+<!--&lt;!&ndash;                                    <td>A</td>&ndash;&gt;-->
+<!--&lt;!&ndash;                                    <td>A</td>&ndash;&gt;-->
+<!--&lt;!&ndash;                                    <td>A</td>&ndash;&gt;-->
+<!--&lt;!&ndash;                                    <td>A</td>&ndash;&gt;-->
+<!--&lt;!&ndash;                                </tr>&ndash;&gt;-->
+<!--&lt;!&ndash;                                <tr>&ndash;&gt;-->
+<!--&lt;!&ndash;                                    <td>A</td>&ndash;&gt;-->
+<!--&lt;!&ndash;                                    <td>A</td>&ndash;&gt;-->
+<!--&lt;!&ndash;                                    <td>A</td>&ndash;&gt;-->
+<!--&lt;!&ndash;                                    <td>A</td>&ndash;&gt;-->
+<!--&lt;!&ndash;                                    <td>A</td>&ndash;&gt;-->
+<!--&lt;!&ndash;                                    <td>A</td>&ndash;&gt;-->
+<!--&lt;!&ndash;                                </tr>&ndash;&gt;-->
+<!--&lt;!&ndash;                                <tr>&ndash;&gt;-->
+<!--&lt;!&ndash;                                    <td>A</td>&ndash;&gt;-->
+<!--&lt;!&ndash;                                    <td>A</td>&ndash;&gt;-->
+<!--&lt;!&ndash;                                    <td>A</td>&ndash;&gt;-->
+<!--&lt;!&ndash;                                    <td>A</td>&ndash;&gt;-->
+<!--&lt;!&ndash;                                    <td>A</td>&ndash;&gt;-->
+<!--&lt;!&ndash;                                    <td>A</td>&ndash;&gt;-->
+<!--&lt;!&ndash;                                </tr>&ndash;&gt;-->
+<!--&lt;!&ndash;                                <tr>&ndash;&gt;-->
+<!--&lt;!&ndash;                                    <td>A</td>&ndash;&gt;-->
+<!--&lt;!&ndash;                                    <td>A</td>&ndash;&gt;-->
+<!--&lt;!&ndash;                                    <td>A</td>&ndash;&gt;-->
+<!--&lt;!&ndash;                                    <td>A</td>&ndash;&gt;-->
+<!--&lt;!&ndash;                                    <td>A</td>&ndash;&gt;-->
+<!--&lt;!&ndash;                                    <td>A</td>&ndash;&gt;-->
+
+<!--&lt;!&ndash;                                </tr>&ndash;&gt;-->
+<!--&lt;!&ndash;                                <tr>&ndash;&gt;-->
+<!--&lt;!&ndash;                                    <td>A</td>&ndash;&gt;-->
+<!--&lt;!&ndash;                                    <td>A</td>&ndash;&gt;-->
+<!--&lt;!&ndash;                                    <td>A</td>&ndash;&gt;-->
+<!--&lt;!&ndash;                                    <td>A</td>&ndash;&gt;-->
+<!--&lt;!&ndash;                                    <td>A</td>&ndash;&gt;-->
+<!--&lt;!&ndash;                                    <td>A</td>&ndash;&gt;-->
+<!--&lt;!&ndash;                                </tr>&ndash;&gt;-->
+<!--&lt;!&ndash;                                <tr>&ndash;&gt;-->
+<!--&lt;!&ndash;                                    <td>A</td>&ndash;&gt;-->
+<!--&lt;!&ndash;                                    <td>A</td>&ndash;&gt;-->
+<!--&lt;!&ndash;                                    <td>A</td>&ndash;&gt;-->
+<!--&lt;!&ndash;                                    <td>A</td>&ndash;&gt;-->
+<!--&lt;!&ndash;                                    <td>A</td>&ndash;&gt;-->
+<!--&lt;!&ndash;                                    <td>A</td>&ndash;&gt;-->
+<!--&lt;!&ndash;                                </tr>&ndash;&gt;-->
+<!--&lt;!&ndash;                                <tr>&ndash;&gt;-->
+<!--&lt;!&ndash;                                    <td>A</td>&ndash;&gt;-->
+<!--&lt;!&ndash;                                    <td>A</td>&ndash;&gt;-->
+<!--&lt;!&ndash;                                    <td>A</td>&ndash;&gt;-->
+<!--&lt;!&ndash;                                    <td>A</td>&ndash;&gt;-->
+<!--&lt;!&ndash;                                    <td>A</td>&ndash;&gt;-->
+<!--&lt;!&ndash;                                    <td>A</td>&ndash;&gt;-->
+<!--&lt;!&ndash;                                </tr>&ndash;&gt;-->
+<!--&lt;!&ndash;                            </tbody>&ndash;&gt;-->
+<!--&lt;!&ndash;                        </table>&ndash;&gt;-->
+<!--&lt;!&ndash;                    </div>&ndash;&gt;-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</body>-->
+
+<!--</html>-->
+
+
+{% load static%}
+<!--<!DOCTYPE html>-->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global Alignment</title>
+    <link rel="stylesheet" href="{%static 'style.css'%}">
+    <link rel="stylesheet" href="{%static 'bootstrap.min.css'%}">
+    <link rel="stylesheet" href="{%static 'all.min.css'%}">
+    <link rel="stylesheet" href="{%static 'fontawesome-free-6.1.1-web/css/fontawesome.min.css'%}">
+    <link rel="stylesheet" href="{%static 'https://use.fontawesome.com/releases/v5.8.1/css/all.css'%}"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link href="{%static 'https://fonts.googleapis.com/css?family=Montserrat:400,600,700|Nunito:400,700'%}" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container all ">
+        <div class="container py-5 ">
+            <div class="row">
+                <div class="col-lg-3">
+                    <a href="home">
+                    <img src="{%static 'WhatsApp_Image_2022-12-12_at_6.35.20_AM-removebg-preview-removebg-preview.png'%}"
+                        class="img-fluid">
+                    </a>
+                </div>
+                <div class="col-lg-1">
+                    <div class="vl_img"></div>
+                </div>
+                <div class="col-lg-8">
+                    <br>
+                    <br>
+                    <p>global Alignment Website</p>
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-lg-4 ">
+
+                    <p>The Resulting Alignment</p>
+                </div>
+            </div>
+            <br>
+
+            <div class="row">
+                <div class="col-lg-5 px-4">
+                    <p>Sequencing Alignment: </p>
+
+                    <P>{{a1}}</P>
+                    <!-- <div class="vl_seq"></div> -->
+                    <p>{{a2}}</p>
+
+
+                </div>
+                <div class="col-lg-1 ">
+                    <div class="vl"></div>
+                </div>
+
+                <div class="col-lg-6 ">
+                    <br>
+                    <br>
+                    <p>{{sco}}</p>
+                </div>
+
+            </div>
+        </div>
+        <div class="container py-5  justify-content-center">
+            <div class="matrix">
+                <p class="align">Alignment Matrix:</p>
+
+                 <a href="input">
+          <div class="btn text-center  btn-lg">
+           Try Another Sequence
+            <i class="fas fa-arrow-right"></i>
+          </div>
+        </a>
+
+            </div>
+            <!-- <div class="row matrix">
+
+                <div class="col-lg-6 ">
+
+                    <p>Alignment Matrix:</p>
+
+                </div>
+
+                <div class="col-lg-6 ">
+
+                    <div class="btn text-center justify-content-center btn-lg" href="">
+                        Try Another Sequence
+                        <i class="fas fa-arrow-right"></i>
+                    </div>
+
+                </div>
+
+            </div> -->
+            <!-- <div class="row">
+                <div class="col-lg-7 matrix my-4">
+                    <div class="vl_matrix1"></div>
+                </div>
+                <div class="vl_matrix2"></div>
+                <div class="vl_matrix3"></div>
+                <div class="vl_matrix4"></div>
+            </div> -->
+            <div class="row">
+                <div class="col-lg-7 ">
+
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
