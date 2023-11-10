@@ -1,0 +1,87 @@
+.vl {
+  border-left: 2px solid black;
+  height: 200px;
+
+}
+
+.vl_img {
+  border-left: 2px solid black;
+  height: 140px;
+
+}
+
+/* .vl_seq {
+  border-left: 2px solid black;
+  height: 30px;
+} */
+
+/* .vl_matrix1{
+  border-left: 1px solid #F2E5E5;
+  margin-left: 50px;
+  height: 500px;
+}
+.vl_matrix2{
+  border-left: 1px solid #F2E5E5;
+  margin-left: 100px;
+  height: 500px;
+
+}
+.vl_matrix3{
+  border-left: 1px solid #F2E5E5;
+  margin-left: 150px;
+  height: 500px;
+
+} */
+html {
+  background-color: black;
+}
+
+body {
+  background-image: url("WhatsApp Image 2022-12-12 at 5.53.24 AM.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* margin-left:                       -512px;
+  margin-top:                        -384px;
+  position:                        absolute;
+  height:                             1000px;
+  width:                             1050px;
+  left:                                 50%;
+  top:                                  50%;  */
+}
+
+/* .matrix{
+  width: 700px;
+  height:500px;
+  background-color: #2B3A55;
+  shape-rendering:crispEdges;
+  border-radius: 20px;
+
+
+} */
+.table {
+  background-color: #2B3A55;
+  color: white;
+  border-radius: 15px;
+
+}
+
+.btn {
+  color: aliceblue;
+  background-color: #CE7777;
+}
+
+.matrix {
+  display: flex;
+  justify-content: space-between;
+}
+
+.align {
+  display: inline;
+  justify-content: space-between;
+}
+
+p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 30px;
+}

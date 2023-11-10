@@ -1,0 +1,55 @@
+.vl {
+    border-left: 2px solid black;
+    height: 200px;
+  
+  }
+  
+  .vl_img {
+    border-left: 2px solid black;
+    height: 140px;
+  
+  }
+  
+  html {
+    background-color: black;
+  }
+  
+  body {
+    background-image: url("background.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+  }
+  
+  .table {
+    background-color: #2B3A55;
+    color: white;
+    border-radius: 15px;
+  
+  }
+  
+  .btn {
+    color: aliceblue;
+    background-color: #CE7777;
+  }
+  
+  .matrix {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .align {
+    display: inline;
+    justify-content: space-between;
+  }
+  
+  p {
+    font-family: "Montserrat", sans-serif;
+    font-size: 30px;
+  }
+  
+  .btn:hover {
+  
+    color: #111;
+  }

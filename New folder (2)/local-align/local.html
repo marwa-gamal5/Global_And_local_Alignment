@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Local Alignment</title>
+    <link rel="stylesheet" href="local.css">
+    <link rel="stylesheet" href="bootstrap.min.css">
+</head>
+
+<body>
+    <div class="container all ">
+        <div class="container py-5 ">
+            <div class="row">
+                <div class="col-lg-3">
+                    <img src="logo.png" class="img-fluid">
+                </div>
+                <div class="col-lg-1">
+                    <div class="vl_img"></div>
+                </div>
+                <div class="col-lg-8">
+                    <br>
+                    <br>
+                    <h1 style="color: rgb(2, 2, 94);">Local Alignment</h1>
+                </div>
+            </div>
+            <!-- section-2-->
+            <div class="row">
+                <div class="col-lg-4 ">
+                    <p>Input Your Sequence</p>
+                </div>
+                <div class="row" style="padding-top:30px">
+                    <!-- seq form-->
+                    <form class="col-sm-6 " style="padding-top: 25px;">
+                        <div class="form-group row">
+                            <label for="Seq1" class="col-sm-2 col-form-label" style="font-size :30px;">Seq1:</label>
+                            <div class="col-sm-6">
+                                <input type="text" class="seq-form" id="seq1">
+                            </div>
+                        </div>
+                        <br>
+                        <div class="form-group row">
+                            <label for="Seq2" class="col-sm-2 col-form-label" style="font-size :30px;">Seq2:</label>
+                            <div class="col-sm-6">
+                                <input type="text" class="seq-form" id="Seq2">
+                            </div>
+                        </div>
+                    </form>
+                    <div class="col-lg-1">
+                        <div class="v2_img"></div>
+                    </div>
+                    <!-- score form-->
+                    <form class="col-sm-5">
+                        <div class="form-group row">
+                            <label for="match-score" class="col-sm-7 col-form-label" style="font-size :30px;">Match
+                                Score:</label>
+                            <div class="col-sm-5">
+                                <input type="text" class="score-form" id="match-score">
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <label for="mismatch-score" class="col-sm-7 col-form-label"
+                                style="font-size :30px;">Mismatch Score:</label>
+                            <div class="col-sm-5">
+                                <input type="text" class="score-form" id="mismatch-score">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="gap-score" class="col-sm-7 col-form-label" style="font-size :30px;">Gap
+                                Score:</label>
+                            <div class="col-sm-5">
+                                <input type="text" class="score-form" id="gap-score">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <a href="#">
+                <div class="btn btn-primary "role="button">Generate</div>
+            </a>
+            <style>
+                a{text-decoration: none;}
+                .btn {
+                    display: block;
+                    width: 200px;
+                    font-size: 1.5em;
+                    background: #ffffff4f;
+                    padding: 19px 25px;
+                    
+                    margin-top: 40px;
+                    border: 7px solid #2B3A55;
+                    color: #111;
+                    letter-spacing: 2px;
+                    transition: 0.2s;
+                    border-radius: 20px;
+                    margin-left: 406px;
+                    text-align: center;
+                    
+                }
+                .btn:hover {
+                    letter-spacing: 5px;
+                    background: #2B3A55;
+                    color: rgb(255, 255, 255);
+                    border: 7px solid #2B3A55;
+                }
+            </style>
+            <!--<a class="button" href="#" role="button">Generate</a>-->
+        </div>
+
+</body>
+
+</html>

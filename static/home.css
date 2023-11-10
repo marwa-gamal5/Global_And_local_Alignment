@@ -1,0 +1,95 @@
+body {
+    background-color: #f1e5e5;
+
+}
+
+.logo {
+    width: 300px;
+}
+
+/*titles of the navbar*/
+.section1 h1 {
+    font-style: normal;
+    font-weight: 600;
+    font-size:33px;
+    line-height: 64px;
+    color: #2B3A55;
+    text-shadow: 0px 4px 5px rgb(0 0 0 / 56%);
+    padding-top: 70px;
+
+}
+.btn {
+    color: aliceblue;
+    background-color: #CE7777;
+    border-radius: 5%;
+  }
+  .btn:hover {
+
+    color: #111;
+  }
+.horzantil-line {
+    border-bottom: 2px solid #2B3A55;
+    width: 85%;
+    margin-left: 93px;
+
+}
+
+.section2 {
+    padding-left: 77px;
+}
+.section2 h1{
+    font-family: 'Otomanopee One';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 44px;
+    line-height: 64px;
+    /* identical to box height */
+    color: #2B3A55;
+
+}
+.section2 p {
+    margin-left: 10px;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 35px;
+    color: #2B3A55;
+    font-family: Quicksand;
+}
+
+
+.box p{
+font-family: Quicksand;
+font-size: 24px;
+font-weight: 500;
+line-height: 30px;
+}
+.card {
+    height: 136.8232879638672px;
+    width: 136px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+    border-radius: 50%;
+}
+
+
+.box img {
+    background-color: #2B3A55;
+    height: 136.8232879638672px;
+    width: 136px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+    border-radius: 50%;
+}
+
+.section3 h1 {
+    padding-left: 100px;
+
+}
+
+.section4 h1{
+    padding-left: 100px;
+
+}
+
